@@ -19,7 +19,7 @@ newnode->parent = parent;
 newnode->left = NULL;
 newnode->right = NULL;
    
-if (parent->left)
+if (parent->left != NULL)
 {
 newnode->left = parent->left;
 parent->left = newnode;
