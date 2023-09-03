@@ -4,21 +4,19 @@ binary_tree_t
 {
 binary_tree_t *newnode;
 
-if(!parent)
+if (!parent)
 {
-    return (NULL);
-}
+return (NULL); }
 newnode = malloc(sizeof(binary_tree_t));
 
-if(!newnode)
+if (!newnode)
 {
-    return (NULL);
-}    
+return (NULL); }
 newnode->n = value;
 newnode->parent = parent;
 newnode->left = NULL;
 newnode->right = NULL;
-   
+
 if (parent->right != NULL)
 {
 newnode->right = parent->right;
@@ -26,5 +24,5 @@ parent->right->parent = newnode;
 }
 parent->right = newnode;
 
-return(newnode);
+return (newnode);
 }
