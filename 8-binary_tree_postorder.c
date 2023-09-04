@@ -10,5 +10,5 @@ binary_tree_postorder(tree->left, func);
 
 binary_tree_postorder(tree->right, func);
 
-func(tree->data);
+func(tree->n);
 }
