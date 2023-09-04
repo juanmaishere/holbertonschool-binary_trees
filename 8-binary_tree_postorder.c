@@ -6,9 +6,9 @@ if (tree == NULL)
 {
 return;
 }
-printPostorder(tree->left);
+binary_tree_postorder(tree->left);
 
-printPostorder(tree->right);
+binary_tree_postorder(tree->right);
 
 func(tree->data);
 }
